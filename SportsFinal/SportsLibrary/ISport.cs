@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.SportsLibrary
 {
-    internal class ISport
+    public interface ISport
     {
         string SportName { get; set; }
         string SportDescription { get; set; }
 
         int TeamSize { get; set; }
+
+        string ShowSport();
+
+
+        
     }
+
+   
 }

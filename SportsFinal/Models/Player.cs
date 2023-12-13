@@ -8,10 +8,34 @@ namespace SportsFinal.Models
 {
     internal class Player : IPlayer
     {
-        string Name;
-        int Number;
+        protected string name;
+        protected int number;
 
-        public Player(string name, int number)
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        public int Number
+        {
+            get
+            {
+                return this.number;
+            }
+            set
+            {
+                number = value;
+            }
+        }
+
+
+        public Player()
         {
             this.Name = name;
             this.Number = number;

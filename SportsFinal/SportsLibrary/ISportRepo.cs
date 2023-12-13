@@ -9,6 +9,11 @@ namespace SportsFinal.SportsLibrary
 {
     internal class ISportRepo
     {
-        List<Team> Teams { get; set; }  
+        List<Team> Teams { get; set; }
+
+        public void PrintAllSports()
+        {
+
+        }
     }
 }

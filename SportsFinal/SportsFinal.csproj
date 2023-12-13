@@ -56,14 +56,20 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\SportRepo.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="SportsLibrary\IPerson.cs" />
     <Compile Include="SportsLibrary\IPlayer.cs" />
     <Compile Include="SportsLibrary\ISport.cs" />
     <Compile Include="SportsLibrary\ISportRepo.cs" />
     <Compile Include="SportsLibrary\ITeam.cs" />
+    <Compile Include="Models\Sport.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\BasicCommand.cs" />
+    <Compile Include="ViewModels\SportViewModel.cs" />
+    <Compile Include="Views\UserControlSport.xaml.cs">
+      <DependentUpon>UserControlSport.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -76,6 +82,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\UserControlSport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -104,8 +114,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

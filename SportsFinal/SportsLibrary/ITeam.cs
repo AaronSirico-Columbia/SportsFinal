@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.SportsLibrary
 {
-    internal class ITeam : ISport
+    internal class ITeam
     {
         string TeamName { get; set; }
         int TeamSize { get; set; }
