@@ -1,96 +1,187 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SportsFinal.App" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SportsFinal.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="1.5" Width="1.5" />
+    <Position X="13.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="SportsFinal.Models.Player" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+  <Class Name="SportsFinal.Models.BlackHawks" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\Player.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAgAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Models\BlackHawks.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SportsFinal.Models.Team" Collapsed="true">
-    <Position X="7.75" Y="2.5" Width="1.5" />
+  <Class Name="SportsFinal.Models.Chrome" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Models\Chrome.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Models.Hockey" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAACAAEAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Models\Hockey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Models.HockeyPlayer" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\HockeyPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Models.Lacrosse" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Lacrosse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Models.LacrossePlayer" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LacrossePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Models.Player" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAQAAAAEAAAEQAAAAEAAABAABAAAAAAAA=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SportsFinal.Models.SportRepo" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAASAAABAgAAAAAAEAAAAAAAAAAAIAAAACCAAAAAAA=</HashCode>
+      <FileName>Models\SportRepo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SportsFinal.Models.Team" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAECAAEBEAAgABABIAAAAQAAAAA=</HashCode>
       <FileName>Models\Team.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SportsFinal.Models.IPerson" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="SportsFinal.SportsLibrary.Sport" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SportsLibrary\IPerson.cs</FileName>
+      <HashCode>AgAIAAIACAAAAAAACAAAAggAAAAQAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Models\Sport.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="SportsFinal.Models.IPlayer" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SportsLibrary\IPlayer.cs</FileName>
-    </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SportsFinal.Properties.Resources" Collapsed="true">
-    <Position X="9.5" Y="1.5" Width="1.5" />
+    <Position X="10.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="SportsFinal.Properties.Settings" Collapsed="true">
-    <Position X="6" Y="2.5" Width="1.5" />
+    <Position X="12" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
-  <Class Name="SportsFinal.SportsLibrary.ISport" Collapsed="true">
-    <Position X="3.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAAAAAACAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
-      <FileName>SportsLibrary\ISport.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SportsFinal.SportsLibrary.ISportRepo" Collapsed="true">
-    <Position X="6" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SportsLibrary\ISportRepo.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SportsFinal.SportsLibrary.ITeam" Collapsed="true">
-    <Position X="3.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAgABAAAAAAAAAAAAA=</HashCode>
-      <FileName>SportsLibrary\ITeam.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="SportsFinal.ViewModels.BaseViewModel" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+  <Class Name="SportsFinal.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\BaseViewModel.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SportsFinal.ViewModels.BasicCommand" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+    <Position X="12" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModels\BasicCommand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="SportsFinal.ViewModels.SportViewModel" Collapsed="true">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAQCIACAAgAAAACAEAAgBAAAAAAIAQCAAAAAAAgAA=</HashCode>
+      <FileName>ViewModels\SportViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SportsFinal.Views.UserControlHockey" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\UserControlHockey.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SportsFinal.Views.UserControlLacrosse" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\UserControlLacrosse.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SportsFinal.Views.UserControlSport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAACAAAAAAIAAA=</HashCode>
+      <FileName>Views\UserControlSport.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="SportsFinal.SportsLibrary.IPerson" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SportsLibrary\IPerson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SportsFinal.SportsLibrary.IPlayer" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SportsLibrary\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SportsFinal.SportsLibrary.ISport" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIACAAAAAAACAAAAgAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>SportsLibrary\ISport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SportsFinal.SportsLibrary.ISportRepo" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAABAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>SportsLibrary\ISportRepo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SportsFinal.SportsLibrary.ITeam" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>SportsLibrary\ITeam.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

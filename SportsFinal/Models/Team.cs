@@ -4,59 +4,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SportsFinal.Models;
 
 namespace SportsFinal.Models
 {
-    internal class Team : ITeam
+    public class Team : ITeam
     {
-        ISport sport;
-
+        
         protected string teamName;
         protected int teamSize;
         protected List<Player> players;
+        protected IPlayer player;
 
-        public string TeamName {
+        public IPlayer Player { get => player; set => player = value; }
 
-            get
-            {
-                return this.teamName;
-            }
-            set
-            {
-                teamName = value;
-            }
-        }
+        public string TeamName { get => teamName; set => teamName = value; }
+        public int TeamSize { get => teamSize; set => teamSize = value; }
+        List<Player> Players { get => players; set => players = value; }
 
-        public int TeamSize {
-
-            get
-            {
-                return this.teamSize;
-            }
-            set
-            {
-                teamSize = value;
-            }
-        }
-        List<Player> Players {
-
-            get
-            {
-                return this.players;
-            }
-            set
-            {
-                players = value;
-            }
-        }
-
-        public Team()
+        public Team(IPlayer player)
         {
+            this.player = player;
             this.TeamName = teamName;
             this.TeamSize = teamSize;
-            this.Players = players;
-            
+            this.players = new List<Player>();
+
         }
+
+        public void AddTeam()
+        {
+
+        }
+
+        public void RemoveTeam()
+        {
+
+        }
+
+
     }
 
 }

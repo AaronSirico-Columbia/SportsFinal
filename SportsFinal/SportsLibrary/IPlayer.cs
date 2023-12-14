@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportsFinal.Models
+namespace SportsFinal.SportsLibrary
 {
-    internal class IPlayer : IPerson
+    public interface IPlayer : IPerson
     {
-        int number { get; set; }
+       int number { get; set; }
+
+        
     }
 }

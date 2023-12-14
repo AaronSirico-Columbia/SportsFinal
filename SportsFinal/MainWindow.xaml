@@ -12,4 +12,5 @@
             <views:UserControlSport x:Name="ucSport"/>
         </StackPanel>
     </Grid>
+    
 </Window>

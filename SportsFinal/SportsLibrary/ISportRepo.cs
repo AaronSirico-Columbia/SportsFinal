@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.SportsLibrary
 {
-    internal class ISportRepo
+    public interface ISportRepo
     {
-        List<Team> Teams { get; set; }
+       List<Sport> Sports { get;  set; }
 
-        public void PrintAllSports()
-        {
+        void printAllSports();
 
-        }
-    }
+        void AddSports(List<Sport>_sports);
+    } 
+        
 }

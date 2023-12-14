@@ -11,13 +11,17 @@ namespace SportsFinal.SportsLibrary
         string SportName { get; set; }
         string SportDescription { get; set; }
 
-        int TeamSize { get; set; }
+        int RosterSize { get; set; }
 
-        string ShowSport();
+        ITeam Team { get; set; }
 
+        string ShowSports();
 
+       
         
     }
+
+
 
    
 }

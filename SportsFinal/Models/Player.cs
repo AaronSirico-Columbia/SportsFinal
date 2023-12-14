@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SportsFinal.SportsLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,39 +7,26 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.Models
 {
-    internal class Player : IPlayer
+    public class Player : IPlayer
     {
         protected string name;
         protected int number;
+        public string Name { get; set; }
+        public int Number { get; set; }
+        protected IPlayer player;
+        public IPlayer PlayerType { get; set; }
 
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-        public int Number
-        {
-            get
-            {
-                return this.number;
-            }
-            set
-            {
-                number = value;
-            }
-        }
+        int IPlayer.number { get; set; }
 
+        string IPerson.name { get; set; }
 
         public Player()
         {
             this.Name = name;
             this.Number = number;
         }
+
+
+      
     }
 }

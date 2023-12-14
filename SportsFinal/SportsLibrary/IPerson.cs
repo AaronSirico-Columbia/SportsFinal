@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SportsFinal.Models
+namespace SportsFinal.SportsLibrary
 {
-    internal class IPerson
+    public interface IPerson
     {
         string name { get; set; }
     }

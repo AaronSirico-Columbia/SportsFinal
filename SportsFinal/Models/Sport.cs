@@ -9,11 +9,25 @@ using SportsFinal.Models;
 
 namespace SportsFinal.SportsLibrary
 {
-    public class Sport : ISport
+    public class Sport : SportRepo, ISport
     {
         protected string sportName;
         protected string sportDescription;
         protected int rosterSize;
+        protected ITeam team;
+
+        public ITeam Team { get => team; set => team = value; }
+
+        public Sport(ITeam team)
+        {
+            this.team = team;
+            this.SportName = sportName;
+            this.SportDescription = sportDescription;
+            this.RosterSize = rosterSize;
+        }
+
+       
+
         public string SportName
         {
             get
@@ -56,14 +70,11 @@ namespace SportsFinal.SportsLibrary
 
             }
         }
-        public Sport()
+        
+        public string ShowSports()
         {
-            this.SportName = "Hockey";
-            this.SportDescription = sportDescription;
-            this.RosterSize= rosterSize;
+            return SportName;
         }
-
-        public void ShowSport()
-        { this.SportName = sportName; }
+       
     }
 }
