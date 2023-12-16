@@ -29,5 +29,15 @@ namespace SportsFinal
         {
             InitializeComponent();
         }
+
+        private void ToLacrossePage_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new LacrossePage());
+        }
+
+        private void ToHockeyPage_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(new HockeyPage());
+        }
     }
 }

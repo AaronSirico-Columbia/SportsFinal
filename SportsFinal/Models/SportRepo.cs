@@ -10,27 +10,20 @@ namespace SportsFinal.Models
     public class SportRepo : ISportRepo
     {
         protected List<Sport> sports;
-        protected List<Team> teams;
         protected Sport sport;
-
-        public Hockey hockey = new Hockey(new BlackHawks(new HockeyPlayer()));
-        public Lacrosse lacrosse = new Lacrosse(new Chrome(new LacrossePlayer()));
+        
+        Hockey hockey = new Hockey();
+        Lacrosse lacrosse = new Lacrosse();
         public Sport Sport { get => sport; set => sport = value; }
-        public List<Sport> Sports { get; set; }
-
-        public List<Team> Teams { get => teams; set => teams = value; }
-
-        public SportRepo()
-        {
-
-        }
+        public List<Sport> Sports { get => sports; set => sports = value; }
 
         public SportRepo(Sport sport)
-        { 
-            this.Sport = sport;
+        {
+            List<Sport> sports = new List<Sport>();
+            this.Sport = hockey;
             this.Sports = sports;
-            this.Teams = teams;
-            AddSports(Sports);
+            sports.Add(hockey);
+            sports.Add(lacrosse);
         }
 
         public void printAllSports()
@@ -41,18 +34,6 @@ namespace SportsFinal.Models
             }
         }
 
-        public void AddSports(List<Sport>_sports)
-        {
-            if(_sports == null)
-            {
-                _sports.Add(new Hockey(new Team(new Player())));
-                _sports.Add(new Lacrosse(new Team(new Player())));
-            }
-            else
-            {
-                _sports.Add(new Sport(new Team(new Player())));
-            }
-        }
 
     }
 }

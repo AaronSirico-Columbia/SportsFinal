@@ -9,15 +9,19 @@ namespace SportsFinal.Models
 {
     public class Hockey : Sport
     {
-        public List<Team>HockeyTeams { get; set; }  
+        protected List<ITeam> hockeyTeams;
+        public List<ITeam>HockeyTeams { get => hockeyTeams; set => hockeyTeams = value; }
+        public BlackHawks hawks = new BlackHawks();
 
-        public Hockey(ITeam team) :base(team)
+        public Hockey()
         {
+            List<ITeam> hockeyTeams = new List<ITeam>();
             this.sportName = "Hockey";
             this.sportDescription = " game between two teams, each usually having six players, who wear skates and compete on an ice rink. " +
                 "The object is to propel a vulcanized rubber disk, the puck, past a goal line and into a net guarded by a goaltender, or goalie.";
             this.rosterSize = 23;
-            
+            this.HockeyTeams= hockeyTeams;
+            hockeyTeams.Add(hawks);
         }
 
         public string About()
@@ -27,7 +31,7 @@ namespace SportsFinal.Models
 
         public Team AddTeam(List<Team>hockeyTeams)
         {
-            Team newTeam = new Team(new HockeyPlayer());
+            Team newTeam = new Team(new Sport());
             hockeyTeams.Add(newTeam);
             return newTeam;
 
@@ -35,9 +39,9 @@ namespace SportsFinal.Models
 
         public Team RemoveTeam(List<Team> hockeyTeams)
         {
-            Team newTeam = new Team(new HockeyPlayer());
+            Team newTeam = new Team(new Sport());
             hockeyTeams.Remove(newTeam);
             return newTeam;
-        }
+        }   
     }
 }

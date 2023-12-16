@@ -25,7 +25,7 @@ namespace UnitySportTests
 
             sport = unityContainer.Resolve<Hockey>();
 
-            Assert.IsInstanceOfType(sport.Team, typeof(Team));
+            Assert.IsInstanceOfType(sport, typeof(Sport));
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace UnitySportTests
 
             sport = unityContainer.Resolve<Lacrosse>();
 
-            Assert.IsInstanceOfType(sport.Team, typeof(Team));
+            Assert.IsInstanceOfType(sport, typeof(Sport));
         }
 
         [TestMethod]
@@ -45,7 +45,7 @@ namespace UnitySportTests
 
             team = unityContainer.Resolve<BlackHawks>();
 
-            Assert.IsInstanceOfType(team, typeof(Team));
+            Assert.IsInstanceOfType(team, typeof(ITeam));
         }
 
         [TestMethod]
@@ -55,7 +55,7 @@ namespace UnitySportTests
 
             team = unityContainer.Resolve<Chrome>();
 
-            Assert.IsInstanceOfType(team, typeof(Team));
+            Assert.IsInstanceOfType(team, typeof(ITeam));
         }
 
        

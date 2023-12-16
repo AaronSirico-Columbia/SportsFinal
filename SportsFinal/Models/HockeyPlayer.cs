@@ -9,11 +9,13 @@ namespace SportsFinal.Models
 {
     public class HockeyPlayer : Player
     {
-        public HockeyPlayer()
+        ITeam Team { get; set; }
+        public HockeyPlayer(Team team) : base(team)
         { 
-        
-        
-
+            this.Team = team;
+            this.player = new HockeyPlayer(team);
+            this.Name = name;
+            this.Number = number;
         }
     }
 }

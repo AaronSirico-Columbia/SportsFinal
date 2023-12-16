@@ -9,10 +9,11 @@ namespace SportsFinal.Models
 {
     public class LacrossePlayer : Player
     {
-        public LacrossePlayer()
+        public LacrossePlayer(Team team) : base(team)
         {
-
-
+            this.player = new LacrossePlayer(team);
+            this.Name = name;
+            this.Number = number;
         }
     }
 }

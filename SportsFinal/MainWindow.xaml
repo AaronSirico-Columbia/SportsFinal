@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:SportsFinal"
         xmlns:views="clr-namespace:SportsFinal.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="556" Width="800">
     <Grid>
         <StackPanel>
-            <views:UserControlSport x:Name="ucSport"/>
+            <views:UserControlSport x:Name="ucSport" Height="435" Width="799"/>
+            <Button x:Name="ToLacrossePage" Content="Go To Lacrosse" Width="220" Height="26" Click="ToLacrossePage_Click" RenderTransformOrigin="0.471,1.114"/>
+            <Button x:Name="ToHockeyPage" Content="Go To Hockey" Width="220" Height="26" Click="ToHockeyPage_Click" RenderTransformOrigin="0.471,1.114"/>
         </StackPanel>
+        <Frame x:Name="mainFrame" Margin="1,4,0,0" Height="526" VerticalAlignment="Top"/>
     </Grid>
-    
+
 </Window>

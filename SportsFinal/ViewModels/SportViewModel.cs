@@ -15,20 +15,20 @@ namespace SportsFinal.ViewModels
 
         public ISport sport { get; set; }
 
-        public ISportRepo repo { get; set; }
-
-        public Sport SportRepo { get; set; }
+        public ISportRepo repo { get; set; } 
 
         public ICommand ShowSportCommand {  get; set; }
 
-        public ICommand AddSportCommand { get; set; }
+     
+
+        
 
         public SportViewModel(ISport sport, ISportRepo repo)
         {
-            ShowSportCommand = new BasicCommand(OnShowSportCommand, ShowSportCommandCanExecute);
-            AddSportCommand = new BasicCommand(OnAddSportCommand, AddSportCommandCanExecute);
             this.repo = repo;
             this.sport = sport;
+            ShowSportCommand = new BasicCommand(OnShowSportCommand, ShowSportCommandCanExecute);
+            
 
         }
 
@@ -89,21 +89,5 @@ namespace SportsFinal.ViewModels
             RaisePropertyChangedEvent("SportName");
         }
 
-        private bool AddSportCommandCanExecute(object parameter)
-        {
-            return true;
-        }
-
-        private void OnAddSportCommand(object parameter)
-        {
-            this.repo.AddSports(repo.Sports);
-            RaisePropertyChangedEvent("Sports");
-        }
-
-        internal void AddSport()
-        {
-            this.repo.AddSports(repo.Sports);
-            RaisePropertyChangedEvent("Sports");
-        }
     }
 }

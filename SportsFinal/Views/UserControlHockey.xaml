@@ -7,11 +7,11 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="13" Margin="-1,86,0,0" VerticalAlignment="Top" Width="293" Fill="#FF333333"/>
-        <Rectangle HorizontalAlignment="Left" Height="13" Margin="2,185,0,0" VerticalAlignment="Top" Width="294" Fill="#FF333333"/>
-        <Rectangle HorizontalAlignment="Left" Height="14" Margin="3,276,0,0" VerticalAlignment="Top" Width="294" Fill="#FF333333"/>
-        <Rectangle HorizontalAlignment="Left" Height="14" Margin="6,375,0,0" VerticalAlignment="Top" Width="294" Fill="#FF333333"/>
-        <Label x:Name="Team1Hock"  Content="Placement Text" HorizontalAlignment="Left" Height="51" Margin="10,33,0,0" VerticalAlignment="Top" Width="262" FontSize="36"/>
+        <Button Content="Show Teams" HorizontalAlignment="Left" Height="24" Margin="672,21,0,0" VerticalAlignment="Top" Width="97" Click="ShowTeam_Click"/>
+        <Button Content="Add Team" HorizontalAlignment="Left" Height="24" Margin="448,21,0,0" VerticalAlignment="Top" Width="97" Click="AddTeam_Click"/>
+        <Button Content="Remove Team" HorizontalAlignment="Left" Height="24" Margin="560,21,0,0" VerticalAlignment="Top" Width="97" Click="RemoveTeam_Click"/>
+        <TextBox x:Name="TeamLabel" HorizontalAlignment="Left" Height="319" Margin="675,70,0,0" TextWrapping="Wrap" Text="{Binding TeamLabel}" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Hockey Teams" HorizontalAlignment="Left" Height="43" Margin="583,66,0,0" VerticalAlignment="Top" Width="131"/>
 
     </Grid>
 </UserControl>

@@ -11,8 +11,8 @@ namespace SportsFinal.Models
     {
         protected string name;
         protected int number;
-        public string Name { get; set; }
-        public int Number { get; set; }
+        public string Name;
+        public int Number;
         protected IPlayer player;
         public IPlayer PlayerType { get; set; }
 
@@ -20,10 +20,11 @@ namespace SportsFinal.Models
 
         string IPerson.name { get; set; }
 
-        public Player()
+
+        public Player(ITeam team )
         {
-            this.Name = name;
-            this.Number = number;
+            this.Name = "player name";
+            this.Number = 00;
         }
 
 

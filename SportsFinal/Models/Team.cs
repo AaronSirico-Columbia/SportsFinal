@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SportsFinal.Models;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SportsFinal.Models
 {
@@ -16,20 +17,63 @@ namespace SportsFinal.Models
         protected List<Player> players;
         protected IPlayer player;
 
+        public ISport Sport { get; set; }
         public IPlayer Player { get => player; set => player = value; }
 
-        public string TeamName { get => teamName; set => teamName = value; }
-        public int TeamSize { get => teamSize; set => teamSize = value; }
-        List<Player> Players { get => players; set => players = value; }
 
-        public Team(IPlayer player)
+        public Team(ISport sport)
         {
-            this.player = player;
+            this.Sport = sport;  
+            this.Player = player;
             this.TeamName = teamName;
             this.TeamSize = teamSize;
             this.players = new List<Player>();
 
         }
+
+        public string TeamName
+        {
+            get
+            {
+                return teamName;
+            }
+            set
+            {
+
+                this.teamName = value;
+
+            }
+        }
+
+        public int TeamSize
+        {
+            get
+            {
+                return teamSize;
+            }
+            set
+            {
+
+                this.teamSize = value;
+
+            }
+        }
+
+        public List<Player> Players
+        {
+            get
+            {
+                return players;
+            }
+            set
+            {
+
+                this.players = value;
+
+            }
+        }
+
+        List<Player> ITeam.players { get; set; }
 
         public void AddTeam()
         {

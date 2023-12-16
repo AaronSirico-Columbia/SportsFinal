@@ -64,6 +64,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HockeyPage.xaml.cs">
+      <DependentUpon>HockeyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LacrossePage.xaml.cs">
+      <DependentUpon>LacrossePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\BlackHawks.cs" />
     <Compile Include="Models\Chrome.cs" />
     <Compile Include="Models\Hockey.cs" />
@@ -82,6 +88,8 @@
     <Compile Include="Models\Sport.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\BasicCommand.cs" />
+    <Compile Include="ViewModels\HockeyViewModel.cs" />
+    <Compile Include="ViewModels\LacrosseViewModel.cs" />
     <Compile Include="ViewModels\SportViewModel.cs" />
     <Compile Include="Views\UserControlHockey.xaml.cs">
       <DependentUpon>UserControlHockey.xaml</DependentUpon>
@@ -92,6 +100,14 @@
     <Compile Include="Views\UserControlSport.xaml.cs">
       <DependentUpon>UserControlSport.xaml</DependentUpon>
     </Compile>
+    <Page Include="HockeyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LacrossePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -7,23 +7,22 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.Models
 {
-    public class Chrome : Team
+    public class Chrome : ITeam
     {
         
-    
-        public Chrome(LacrossePlayer player) : base(player)
+        public ISport Sport { get; set; }
+        public string TeamName { get; set; }
+        public int TeamSize { get; set; }
+        public List<Player> players { get; set; }
+
+        public Chrome()
         {
+            this.TeamName = "Chrome";
+            this.TeamSize = 25;
             List<Player> players = new List<Player>();
+             
+            
         }
 
-        public void AddPlayer()
-        {
-            players.Add(players[0]);
-        }
-
-        public void RemovePlayer()
-        {
-            players.Remove(players[0]);
-        }
     }
 }

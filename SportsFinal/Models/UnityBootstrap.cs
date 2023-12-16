@@ -33,9 +33,8 @@ namespace OOPFlyingVehicleCore
             container.RegisterType<ITeam, Chrome>();
             container.RegisterType<IPlayer, LacrossePlayer>();
             
-            container.RegisterType<Hockey>(new InjectionConstructor(new BlackHawks(new HockeyPlayer())));
-            container.RegisterType<Lacrosse>(new InjectionConstructor(new Chrome(new LacrossePlayer())));
-
+            container.RegisterType<Team>(new InjectionConstructor(new Sport()));
+            
             
 
         }

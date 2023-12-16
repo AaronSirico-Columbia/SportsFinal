@@ -6,12 +6,11 @@
              xmlns:local="clr-namespace:SportsFinal.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="18" Margin="-1,110,0,0" VerticalAlignment="Top" Width="448" Fill="#FF333333" RenderTransformOrigin="0.071,-1.833"/>
-        <Label Content="Sport" HorizontalAlignment="Left" Height="58" Margin="17,40,0,0" VerticalAlignment="Top" Width="253" FontSize="35" Foreground="#FF333333"/>
-        <TextBox x:Name="SportNameTextBox"  HorizontalAlignment="Left" Height="45" Margin="184,43,0,0" TextWrapping="Wrap" Text="{Binding Path=SportName}" VerticalAlignment="Top" Width="244" FontSize="20" />
-        <Button x:Name="AddSportButton" Content="Add Sport"  HorizontalAlignment="Left" Height="47" Margin="13,241,0,0" VerticalAlignment="Top" Width="114" Command="{Binding AddSportCommand}"/>
-        <Button x:Name="ShowSportButton" Content="Show Sports"  HorizontalAlignment="Left" Height="47" Margin="171,241,0,0" VerticalAlignment="Top" Width="114" Command="{Binding ShowSportCommand}"/>
+    <Grid Margin="0,0,1,-1">
+        <Button Content="Show Sports" HorizontalAlignment="Left" Height="24" Margin="7,35,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
+        <Button Content="Add Sport" HorizontalAlignment="Left" Height="24" Margin="117,34,0,0" VerticalAlignment="Top" Width="97" Click="AddSport_Click"/>
+        <Button Content="Remove Sport" HorizontalAlignment="Left" Height="24" Margin="223,34,0,0" VerticalAlignment="Top" Width="97" Click="RemoveSport_Click"/>
+        <TextBox x:Name="SportLabel" HorizontalAlignment="Left" Height="223" Margin="8,83,0,0" TextWrapping="Wrap" Text="{Binding Path=SportLabel}" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </UserControl>

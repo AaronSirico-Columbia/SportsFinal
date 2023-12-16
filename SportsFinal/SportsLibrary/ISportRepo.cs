@@ -12,8 +12,7 @@ namespace SportsFinal.SportsLibrary
        List<Sport> Sports { get;  set; }
 
         void printAllSports();
-
-        void AddSports(List<Sport>_sports);
+        
     } 
         
 }

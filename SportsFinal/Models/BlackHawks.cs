@@ -7,23 +7,21 @@ using System.Threading.Tasks;
 
 namespace SportsFinal.Models
 {
-    public class BlackHawks : Team
+    public class BlackHawks : ITeam
     {
-        List<Player> Players = new List<Player>();
+        public ISport Sport { get; set; }
 
-        public BlackHawks(HockeyPlayer player) :base(player) 
-        { 
-            this.players = Players;
-        }
+        public string TeamName { get; set; }
+        public int TeamSize { get; set; }
+        public List<Player> players { get; set; }
 
-        public void AddPlayer()
+        public BlackHawks()
         {
-            players.Add(players[0]);
+            this.TeamName = "BlackHawks";
+            this.TeamSize = 23;
+            List<Player> players = new List<Player>();
+
         }
 
-        public void RemovePlayer()
-        {
-            players.Remove(players[0]);
-        }
     }
 }
